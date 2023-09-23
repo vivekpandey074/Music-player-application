@@ -1,0 +1,25 @@
+@import "../../mixins.scss";
+
+.widgetcard-body {
+  width: 30%;
+  height: 90%;
+  border-radius: 38px;
+
+  padding: 1% 3%;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  @include phone {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+.widget-title {
+  font-family: cursive;
+  font-size: 14px;
+
+  font-weight: 800;
+}

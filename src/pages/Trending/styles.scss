@@ -1,0 +1,65 @@
+@import "../../mixins.scss";
+
+.library-body {
+  width: 100%;
+  height: 100%;
+  padding: 3%;
+  display: flex;
+  overflow-y: auto;
+  flex-wrap: wrap;
+  gap: 40px;
+  background-color: var(--black4);
+
+  .playlist-card {
+    position: relative;
+    width: 40%;
+    cursor: pointer;
+    border-radius: 20px;
+
+    border: 2px solid rgb(25, 7, 93);
+    margin-bottom: 20px;
+    background-color: rgb(30, 42, 62);
+    background: rgb(2, 0, 36);
+    background: linear-gradient(
+      90deg,
+      rgba(2, 0, 36, 1) 6%,
+      rgba(27, 27, 117, 1) 36%,
+      rgba(2, 0, 36, 1) 95%
+    );
+    flex-shrink: 0;
+    @include md {
+      width: 20%;
+    }
+
+    @include lg {
+      width: 15%;
+    }
+
+    .playlist-image {
+      border-radius: 20px;
+      width: 100%;
+    }
+
+    &:hover {
+      transform: scale(1.02);
+    }
+
+    .playlist-title {
+      font-weight: 800;
+      font-size: 14px;
+      padding: 4px;
+    }
+    .playlist-subtitle {
+      font-size: 10px;
+      font: italic;
+      padding: 4px;
+    }
+    .play-btn {
+      position: absolute;
+      bottom: -15px;
+      right: -15px;
+      z-index: 2;
+      cursor: pointer;
+    }
+  }
+}

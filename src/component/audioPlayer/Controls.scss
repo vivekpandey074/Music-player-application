@@ -1,0 +1,33 @@
+.controls-Wrapper {
+  width: 60%;
+  margin: 0px;
+  align-items: center;
+  justify-content: space-evenly;
+
+  .action-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  .play-pause-btn {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: #c96850;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    &:hover {
+      transition: all 0.2s smooth;
+      transform: scale(1.1);
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.sideBarButton {
+  font-size: 12px;
+  color: white;
+
+  &:hover {
+    color: rgb(217, 213, 213);
+    transform: scale(1.1);
+  }
+  .icons {
+    font-size: 24px;
+    text-align: center;
+    margin: 2px auto;
+  }
+  .text {
+    margin-bottom: 5px;
+  }
+}
+
+.active {
+  color: greenyellow;
+}
+a:link {
+  text-decoration: none;
+}
