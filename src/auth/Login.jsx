@@ -1,5 +1,8 @@
 import { useEffect, useState } from "react";
 import { loginEndpoint } from "../spotify";
+
+import loginbackground from "../assets/loginbackground.jpg";
+import logoimg from "../assets/musiccolor.png";
 import "./styles.scss";
 import $ from 'jquery';
 
@@ -30,15 +33,18 @@ export default function Login() {
   return (
     <div className="loginpage">
 
-        <img src="src\assets\loginbackground.jpg" alt="" className="backdrop-img"/>
-        <img src="src\assets\musiccolor.png" alt="logo" className="logo"/>
+        <img src={loginbackground} alt="" className="backdrop-img"/>
+        <img src={logoimg} alt="logo" className="logo"/>
+        <div className="login-quote-box">
         <div className="quote-box">
         <div >{quote[0]?.quote}</div>
         <div className="author" >-{quote[0]?.author}</div>
         </div>
+       
        <a href={loginEndpoint}>
         <div className="login-btn">LOGIN</div>
-        </a>    
+        </a>  
+        </div>  
     </div>
   )
 }

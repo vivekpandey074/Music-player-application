@@ -8,14 +8,14 @@ import {AiOutlineHeart} from "react-icons/ai";
 import {VscSignOut} from "react-icons/vsc";
 import { useEffect, useState } from "react";
 import apiClient from "../../spotify";
-
+import default_avaatar_img from "../../assets/avaatar.jpg";
 
 
 
 
 
 export default function Sidebar() {
- const [image, setImage]=useState("src\\assets\\avaatar.jpg")
+ const [image, setImage]=useState(default_avaatar_img)
 
   useEffect(()=>{
    apiClient.get("me").then(response=>{

@@ -3,6 +3,9 @@ import Controls from "./Controls";
 import "./styles.scss";
 import { CircularProgressbarWithChildren, buildStyles } from 'react-circular-progressbar';
 
+import cd_disc_art from "../../assets/cd-disc.png";
+import player_img from "../../assets/soundplayer.png";
+
 export default function AudioPlayer({currentTrack, currentIndex, setCurrentIndex, total}) {
 
 const artists=[];
@@ -150,7 +153,7 @@ const addZero = (n) => {
             backgroundColor:"C6A540"
           })}
        >
-      <img src="src\assets\cd-disc.png" alt="cd-art" className="cd-art"/>
+      <img src={cd_disc_art} alt="cd-art" className="cd-art"/>
        </CircularProgressbarWithChildren>
        </div>
        </div>
@@ -161,7 +164,7 @@ const addZero = (n) => {
       <div className="player-right-bottom flex">
         <div className="song-duration flex">
         <p className="duration">0:{addZero(Math.round(trackProgress))}</p>
-        <img src="src\assets\soundplayer.png" alt="sound player" className="sound-player-art" />
+        <img src={player_img} alt="sound player" className="sound-player-art" />
         <p className="duration">0:30</p>  
         </div>
         <Controls

@@ -1,3 +1,5 @@
+@import "../../mixins.scss";
+
 .controls-Wrapper {
   width: 60%;
   margin: 0px;
@@ -29,5 +31,9 @@
       transition: all 0.2s smooth;
       transform: scale(1.1);
     }
+  }
+
+  @include phone {
+    width: 80%;
   }
 }
